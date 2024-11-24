@@ -7,15 +7,7 @@ const server = http.createServer(app);
 const cors = require("cors");
 app.use(cors());
 app.use(express.json());
-app.use((req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", "*");
-  res.setHeader(
-    "Access-Control-Allow-Methods",
-    "GET, POST, DELETE, PUT, PATCH"
-  );
-  res.setHeader("Access-Control-Allow-Headers", "*");
-  next();
-});
+app.options("*", cors());
 app.use(express.raw({ type: "audio/*", limit: "10mb" }));
 app.post("/", async (req, res) => {
   try {
