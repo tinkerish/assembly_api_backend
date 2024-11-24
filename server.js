@@ -1,4 +1,4 @@
-const { assemblyai } = require("./assemly_api.ts");
+const { assemblyai } = require("./assemly_api.js");
 require("dotenv").config();
 const http = require("http");
 const express = require("express");

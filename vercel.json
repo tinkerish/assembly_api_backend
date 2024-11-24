@@ -2,15 +2,15 @@
   "version": 2,
   "builds": [
     {
-      "src": "server.ts",
+      "src": "server.js",
       "use": "@vercel/node",
-      "config": { "includeFiles": ["assemly_api.ts", "dist/**"] }
+      "config": { "includeFiles": ["assemly_api.js", "dist/**"] }
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "server.ts"
+      "dest": "server.js"
     }
   ],
   "headers": [
