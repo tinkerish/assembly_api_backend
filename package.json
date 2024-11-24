@@ -1,0 +1,23 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.ts",
+  "scripts": {
+    "start": "node server.ts",
+    "dev": "nodemon server.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.1",
+    "nodemon": "^3.1.7"
+  },
+  "dependencies": {
+    "assemblyai": "^4.8.0",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "raw-body": "^3.0.0",
+    "ws": "^8.18.0"
+  }
+}
