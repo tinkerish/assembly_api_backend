@@ -4,7 +4,7 @@
     {
       "src": "server.ts",
       "use": "@vercel/node",
-      "config": { "includeFiles": ["dist/**"] }
+      "config": { "includeFiles": ["assemly_api.ts", "dist/**"] }
     }
   ],
   "routes": [
