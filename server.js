@@ -14,7 +14,7 @@ app.use((req,res,next)=>{
 })
 app.use(express.json());
 app.options("*", cors());
-app.use(express.raw({ type: "audio/*", limit: "10mb" }));
+app.use(express.raw({ type: "audio/*", limit: "30mb" }));
 app.post("/", async (req, res) => {
   try {
     const audioFile = req.body;
